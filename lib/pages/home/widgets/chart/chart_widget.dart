@@ -1,4 +1,4 @@
-import 'package:DevQuiz/core/core.dart';
+import 'package:nlw_quiz_dev/core/core.dart';
 import 'package:flutter/material.dart';
 
 class ChartWidget extends StatelessWidget {
@@ -9,7 +9,6 @@ class ChartWidget extends StatelessWidget {
     return Container(
       height: 80,
       width: 80,
-      padding: EdgeInsets.only(left: 16),
       child: Stack(
         children: [
           Center(

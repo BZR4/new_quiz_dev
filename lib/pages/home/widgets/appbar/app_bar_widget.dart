@@ -1,6 +1,6 @@
-import 'package:DevQuiz/core/core.dart';
-import 'package:DevQuiz/widgets/card/score_card_widget.dart';
+import 'package:nlw_quiz_dev/core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:nlw_quiz_dev/pages/home/widgets/card/score_card_widget.dart';
 
 class AppBarWidget extends PreferredSize {
   AppBarWidget()
@@ -46,7 +46,7 @@ class AppBarWidget extends PreferredSize {
                   ),
                 ),
                 Align(
-                  alignment: Alignment(0.0, 1.2),
+                  alignment: Alignment(0.0, 1.0),
                   child: ScoreCardWidget(),
                 ),
               ],
