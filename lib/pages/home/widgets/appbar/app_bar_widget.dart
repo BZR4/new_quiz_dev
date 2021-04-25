@@ -1,14 +1,16 @@
 import 'package:nlw_quiz_dev/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:nlw_quiz_dev/pages/home/widgets/card/score_card_widget.dart';
+import 'package:nlw_quiz_dev/pages/shared/models/user_model.dart';
 
 class AppBarWidget extends PreferredSize {
-  AppBarWidget()
+  final UserModel user;
+
+  AppBarWidget({required this.user})
       : super(
           preferredSize: Size.fromHeight(250),
           child: Container(
             height: 250,
-            // decoration: BoxDecoration(gradient: AppGradients.linear),
             child: Stack(
               children: [
                 Container(
@@ -25,8 +27,7 @@ class AppBarWidget extends PreferredSize {
                           style: AppTextStyles.title,
                           children: [
                             TextSpan(
-                                text: 'Esdras DEV',
-                                style: AppTextStyles.titleBold)
+                                text: user.name, style: AppTextStyles.titleBold)
                           ],
                         ),
                       ),
@@ -37,8 +38,7 @@ class AppBarWidget extends PreferredSize {
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: NetworkImage(
-                                'https://images.pexels.com/photos/3601491/pexels-photo-3601491.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'),
+                            image: NetworkImage(user.photoUrl),
                           ),
                         ),
                       ),

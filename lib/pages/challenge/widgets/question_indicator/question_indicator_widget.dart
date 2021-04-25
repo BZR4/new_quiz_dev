@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nlw_quiz_dev/core/core.dart';
-import 'package:nlw_quiz_dev/pages/challenge/widgets/progress_indicator/progress_indicator_widget.dart';
+import 'package:nlw_quiz_dev/pages/shared/widgets/progress_indicator/progress_indicator_widget.dart';
 
 class QuestionIndicatorWidget extends StatelessWidget {
   @override
